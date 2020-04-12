@@ -1,10 +1,13 @@
-R Markdown
-----------
+Habits
+================
+John Doe
+March 22, 2005
+
+## R Markdown
 
 This is an R Markdown document. Markdown is a simple formatting syntax
 for authoring HTML, PDF, and MS Word documents. For more details on
-using R Markdown see
-<a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.
+using R Markdown see <http://rmarkdown.rstudio.com>.
 
 When you click the **Knit** button a document will be generated that
 includes both content as well as the output of any embedded R code
@@ -22,12 +25,18 @@ summary(cars)
     ##  3rd Qu.:19.0   3rd Qu.: 56.00  
     ##  Max.   :25.0   Max.   :120.00
 
-Including Plots
----------------
+``` r
+par(mar=c(2,2,1,1),las=1)
+plot(cars)
+```
+
+![](test2_files/figure-gfm/cars-1.png)<!-- -->
+
+## Including Plots
 
 You can also embed plots, for example:
 
-![](test2_files/figure-markdown_github/pressure-1.png)
+![](test2_files/figure-gfm/pressure-1.png)<!-- -->
 
 Note that the `echo = FALSE` parameter was added to the code chunk to
 prevent printing of the R code that generated the plot.
